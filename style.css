@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    background: #000;
+}
+header{
+    height: 108vh;
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%) , url(/img/img-header-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header > nav > div > .img-netflix-logo{
+    /* max-width: 10%; */
+}
+header > nav > div > .btn{
+    background: red;
+    color: white;
+}
