@@ -13,7 +13,7 @@ header{
     background-size: cover;
     background-position: center;
 }
-header > div:nth-child(1) > div > nav > div > .buttonSignin{
+.buttonSignin, .buttonSignin:hover{
     background: red;
     color: white;
     font-size: 1rem;
@@ -21,14 +21,6 @@ header > div:nth-child(1) > div > nav > div > .buttonSignin{
     font-weight: 400;
     text-decoration: none;
 }
-/* .btn:hover{
-    background: red;
-    color: white;
-    font-size: 1rem;
-    border-radius: 0.2rem;
-    font-weight: 400;
-    text-decoration: none;
-} */
 header > div > div > h1{
     color: white;
     font-size: 3.1rem;
@@ -40,37 +32,62 @@ header > div > div > h4{
     font-size: 1.6rem;
     line-height: 3rem;
 }
-header > div:nth-child(2) > div > h4{
+.readyH4{
     color: white;
     font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 500;
 }
-header > div > div > .buttonGetstarted{
+.buttonGetstarted, .buttonGetstarted:hover{
     background: red;
     color:white;
-    border-radius: 0;
+    border-radius: 0 0.1rem 0.1rem 0rem;;
     font-size: 1.5rem;
     margin-left: 1px;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
 }
-header > div:nth-child(2) > div > .form-control{
+.form-control{
     border-radius: 0.1rem 0 0 0.1rem;
+    display: inline-block;
+    max-width: 36%;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
 }
 
+/* Media Query */
 
-@media only screen and (min-width: 0px) and (max-width: 576px){
+@media only screen and (min-width: 0px) and (max-width: 575px){     /* xs screen */
     header > div > div > h1{
         font-size: 1.8rem;
         line-height: 2rem;
         font-weight: 700;
+        padding-top: 4.6rem;
     }
     header > div > div > h4{
         font-size: 1.1rem;
         line-height: 2rem;
         font-weight: 500;
     }
+    .form-control{
+        border-radius: 0.1rem 0 0 0.1rem;
+        max-width: 94%;
+        /* padding-top: 0.6rem;
+        padding-bottom: 0.6rem; */
+        margin-bottom: 1.6rem;
+    }
+    .buttonGetstarted, .buttonGetstarted:hover{
+        border-radius: 0.2rem;
+        font-size: 1.5rem;
+        margin-left: 1px;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+  
+
+    }
+    .wrapper-input-button{
+        flex-wrap: wrap;
+        display: flex;
+    }
+
 }
